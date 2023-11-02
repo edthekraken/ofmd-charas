@@ -76,7 +76,12 @@ var namMember = new Array(
  
 //*********************************************************
  
- 
+for (let i = namMember.length -1; i > 0; i--) {
+  let j = Math.floor(Math.random() * (i+1));
+  let k = namMember[i];
+  namMember[i] = namMember[j];
+  namMember[j] = k;
+}
  
 var lstMember = new Array();
  
@@ -724,7 +729,7 @@ showImage();
  
 </script>
 <p class="other">
-<center><small><br /><br />used with permission.<br /><br/><a href="http://biasorter.tumblr.com/">created by biasorter</a>.
+<center><small><br /><br/><a href="http://biasorter.tumblr.com/">original sorter template from biasorter</a>.
 </small></center></small>
 </p>
  
